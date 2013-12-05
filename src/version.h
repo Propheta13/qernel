@@ -15,12 +15,13 @@
  * along with Qernel.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef __KPRINT_H__
-#define __KPRINT_H__
+#ifndef VERSION_H
+#define VERSION_H
 
-#include "types.h"
+#define QERNEL_VERSION_MAJOR 0
+#define QERNEL_VERSION_MINOR 1
+#define QERNEL_VERSION_FEATURE 1
 
-int32_t kprint(const char *format, ...);
-int32_t kblob(uint8_t *pArray, uint32_t uiSize, uint8_t uLine);
+#define QERNEL_VERSION "Version: %u.%u.%u", QERNEL_VERSION_MAJOR, QERNEL_VERSION_MINOR, QERNEL_VERSION_FEATURE
 
-#endif /* __KPRINT_H__ */
+#endif // VERSION_H

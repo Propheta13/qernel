@@ -81,9 +81,6 @@ int vsprintf(char *buf, const char *fmt, va_list args)
 
   for (p = buf; *fmt; fmt++)
   {
-    if(!((p - buf)))
-      return 0;
-
     if (*fmt != '%')
     {
       *p++ = *fmt;

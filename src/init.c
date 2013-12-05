@@ -16,10 +16,12 @@
  */
 
 #include "cortex_a9.h"
+#include "version.h"
 #include "kprint.h"
 
-int init() {
-    print_uart("Init.\n");
-    return kprint("Init.\n");
+void init() {
+    kprint("Qernel init.");
+    kprint(QERNEL_VERSION);
+
     while(1){}
 }

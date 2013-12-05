@@ -25,7 +25,7 @@
 
 volatile unsigned int * const UART0DR = (unsigned int *)UART0; //Make changable
 
-void print_uart(const char *s) {
+static void print_uart(const char *s) {
     while(*s != '\0') { /* Loop until end of string */
         *UART0DR = (unsigned int)(*s); /* Transmit char */
         s++; /* Next char */
