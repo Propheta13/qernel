@@ -20,8 +20,8 @@
 #include "kprint.h"
 
 void init() {
-    kprint("Qernel init.");
-    kprint(QERNEL_VERSION);
+    kprint("Qernel init. Version: %s", QERNEL_VERSION);
+
 
     while(1){}
 }
